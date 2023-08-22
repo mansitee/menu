@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en">
+<html>
+<head>
+
+  <meta charset="utf-8"> <title>MANsitee</title>
+	<link rel="canonical" href="https://mansitee.github.io" />
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="yes" name="mobile-web-app-capable">
+  <meta content="#000" name="theme-color">
+  <meta content="#000" name="msapplication-TileColor">
+  <meta content="#000" name="apple-mobile-web-app-status-bar-style">
+  <meta content="mansitee.github.io, mansitee, manten, proyek, cantik, keren, banget" name="apple-mobile-web-app-title">
+  	 
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="manifest" href="./manifest.json">
+    
+  <link href="./icon-152x152.png" rel="apple-touch-icon">
+  <!-- SEO and Social Sharing and SEO -->
+	<meta name="description" content="Simple Progressive Web App (PWA) template mansitee" />
+	<meta name="robots" content="noodp" />
+	<meta name="author" content="Rusmansutardi">
+	<meta name="keywords" content="progressive web app, progressive web application, pwa, pwa progressive web app, pwa progressive web application, progressive app, basic progressive web app, basic progressive web application, basic pwa, example progressive web app, example progressive web application, example pwa, progressive web app basic, progressive web app builder, progressive web app example, progressive web app sample, progressive web app template, sample progressive web app, sample progressive web application, sample pwa, free progressive web application template, progressive web application template, progressive web app template free, progressive web app template free download, progressive web app html template, progressive web app template github" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Simple PWA mansitee" />
+	<meta property="og:description" content="Simple Progressive Web App (PWA) template mansitee.github.io download free music search engine free music downloading sites and enjoy staying here and now my body color run Indonesia yang telah " />
+	<meta property="og:url" content="https://mansitee.github.io" />
+	<meta property="og:site_name" content="Simple PWA" />
+	<meta property="section:publisher" content="https://www.facebook.com/rusman.sutardi.16/" />
+	
+	
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    
+    <style>/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+    background: linear-gradient(to bottom, #4CAF50, #F1F4F9);
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.logo {display: flex; color:white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.logo c{color:#C8E6C9;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.scrollmenu {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scrollmenu a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.scrollmenu a:hover {
+  background-color: #ddd;
+}
+
+/* Main Styles */
+main {background-color: #F1F4F9;
+    tmargin:10px;}
+ 
+main .main-container {
+  background-color: #F1F4F9;
+  padding:2px;margin:5px;
+} 
+ 
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+/* Footer Styles */
+footer {
+    tbackground-color: #cfd6e1;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+.post {
+  margin-top:10px; border-radius:10px;
+  background-color: #fff;background: linear-gradient(to bottom, #ffffff, #C8E6C9); 
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.post-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+   border-radius:10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.post-content {
+  padding: 10px;
+}
+
+.post-content p {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.post-content video {width:100%;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+
+.post-content img {width:100%;
+  max-width: 100%;
+  margin: 10px 0;
+}
+
+.post-actions {background-color:#C8E6C9; 
+  tborder-bottom: 1px solid #f0f2f5;
+  padding: 10px;
+}  
+
+.post-actions ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-actions li {
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+.post-actions li a {
+  color: #555;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.post-actions li a:hover {
+  color:#4CAF50;
+}
+
+
+
+.tabs-fixed, .tabs-sticky, .tabs-static{
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #F1F4F9;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.tabs-fixed{ position:fixed;}
+.tabs-sticky{ position: sticky;}
+.tabs-sticky{ position: static;}
+
+.top{top:0;}
+.bottom{bottom:0;}  	
+
+.tabs {display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  
+}
+
+.tab {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.tab.active {
+  color: #3b5998;
+  border-bottom: 3px solid #3b5998;
+}
+
+
+.tab.home {padding: 10px;
+  font-size: 20px; margin:20px 30px 20px 1px; text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #3b5998;
+  
+}
+
+.tab-content {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+} 
+
+
+
+
+#grid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 1rem;
+}
+
+.item {
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   overflow: hidden;
+   box-shadow: 2px 2px 5px rgba(0,0,0,.1);
+}
+ 
+.item img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+.fb-stories {
+  display: flex;
+  overflow-x: scroll;
+  margin-top: 10px;
+}
+
+.fb-story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.fb-story-avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.fb-story-name {
+  font-size: 12px;
+  text-align: center;
+}
+
+
+
+
+.scrollmenu2 {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+}
+
+.grid-item a {
+  color: black;
+  text-decoration: none;
+  tbox-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); border-radius:10px;
+  padding: 10px;
+}
+
+.grid-item:hover {
+  background-color: #ddd;
+}
+
+
+
+
+
+.scrollmenu3{
+  top: 0; tpadding: 14px 12px 13px 12px;
+  left: 0; margin-top:10px;
+  right: 0;
+  background-color: #f2f2f2;
+  tbbox-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); border-radius: 5px;
+  z-index: 9999;
+ position: sticky;}
+
+.scrollmenu3 {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+  
+.scrollmenu3 a {
+  border-radius:10px;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+
+.scrollmenu3 a hijau{color:#4CAF50;
+  font-size: 24px;
+  font-weight: bold;
+}
+.scrollmenu3 a:hover {
+  background-color: #ddd;
+}
+
+ 
+
+.column{column-count: 2;
+  column-gap:0.3em;
+  padding: 0 4px;
+}
+
+.posting {
+  margin-top:10px; border-radius:10px;
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.post-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+   border-radius:10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.post-content {
+  padding: 10px;
+}
+
+.post-content p {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.post-content video {width:100%;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+
+.post-content img {width:100%;
+  max-width: 100%;
+  margin: 10px 0;
+}
+
+
+
+.post-actions ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-actions li {
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+.post-actions li a {
+  color: #555;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.post-actions li a:hover {
+  color: #3b5998;
+}
+
+
+
+
+</style>
+
+
+<script>
+
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+      
+  </script>
+
+
+<link rel="stylesheet" href="./lite-yt-embed.css" /> 	
+  <script src="./lite-yt-embed.js"></script> 
+
+</head>
+<body>
+  <header>
+  <div class="logo"> Soob<c>in.</c>
+  </div>
+  <div class="scrollmenu">
+    <a href="https://mansitee.github.io/menu">Menu</a>
+    <a href="projects.html">Projek</a>
+    <a href="video.html">video</a>
+    <a href="#">test</a>
+    
+  </div>
+</header>
+
+
+
+<section> 
+  
+  <div class="scrollmenu2">
+  <div class="grid-container">
+  	
+  <a class="grid-item"href="https://mansitee.github/menu/bmcreate">bm create</a>
+<a class="grid-item"href="https://mansitee.github/menu/cpmaster">Color</a>
+<a hclass="grid-item"ref="https://mansitee.github/menu/gpmaster">Gradient</a>
+<a class="grid-item"href="https://mansitee.github/menu/pgmaster">Password</a>
+<a class="grid-item"href="https://mansitee.github/menu/pgmasterr">Password 2</a>
+<a class="grid-item"href="https://mansitee.github/menu/grmaster">Qr</a>	
+  	
+  	
+  	
+  	
+    <div class="grid-item"><a href="#">Menu 1i</a></div>
+    <div class="grid-item"><a href="#">Menu 2</a></div>
+    <div class="grid-item"><a href="#">Menu 3</a></div>
+    <div class="grid-item"><a href="#">Menu 4</a></div>
+    <div class="grid-item"><a href="#">Menu 5</a></div>
+    <div class="grid-item"><a href="#">Menu 6</a></div>
+    <div class="grid-item"><a href="#">Menu 7</a></div>
+    <div class="grid-item"><a href="#">Menu 8</a></div>
+    <div class="grid-item"><a href="#">Menu 9</a></div>
+    <div class="grid-item"><a href="#">Menu 10</a></div>
+    <div class="grid-item"><a href="#">Menu 11</a></div>
+    <div class="grid-item"><a href="#">Menu 12</a></div>
+    <div class="grid-item"><a href="#">Menu 13</a></div>
+    <div class="grid-item"><a href="#">Menu 14</a></div>
+    <div class="grid-item"><a href="#">Menu 15</a></div>
+    <div class="grid-item"><a href="#">Menu 16</a></div>
+    <div class="grid-item"><a href="#">Menu 17</a></div>
+    <div class="grid-item"><a href="#">Menu 18</a></div>
+    <div class="grid-item"><a href="#">Menu 19</a></div>
+    <div class="grid-item"><a href="#">Menu 20</a></div>
+  </div>
+</div>
+
+
+
+
+    <main> <div class="main-container">
+<div class="scrollmenu3">
+  <a href="#"> <hijau>Toko</hijau></a>
+  <a href="#">fashion</a>
+  <a href="#">Elektronik</a>
+  <a href="#">Aksesoris</a>
+  <a href="#">Kecantikan</a>
+  <a href="#">Kesehatan</a>
+  <a href="#">Kendaraan</a>
+  <a href="#">Menu 8</a>
+  <a href="#">Menu 9</a>
+  <a href="#">Menu 10</a>
+  <a href="#">Menu 11</a>
+  <a href="#">Menu 12</a>
+  <a href="#">Menu 13</a>
+  <a href="#">Menu 14</a>
+  <a href="#">Menu 15</a>
+  <a href="#">Menu 16</a>
+  <a href="#">Menu 17</a>
+  <a href="#">Menu 18</a>
+  <a href="#">Menu 19</a>
+  <a href="#">Menu 20</a>
+</div>
+
+
+  
+
+
+  
+     
+  
+  <div class="column">
+  	
+  
+  <div class="posting"> 
+    <div class="post-content">
+    <p>Sogou</p> </div>
+<div class="post-actions"> <ul>
+      <li class="like"><a href="#">122</a></li>
+      <li><a href="#">12$</a></li>
+      <li><a href="#">1#</a></li>
+    </ul> </div> </div>
+
+     
+  
+  
+
+<div class="posting"> 
+    <div class="post-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et auctor .</p> </div>
+<div class="post-actions"> <ul>
+      <li class="like"><a href="#">122</a></li>
+      <li><a href="#">12$</a></li>
+      <li><a href="#">1#</a></li>
+    </ul> </div> </div>
+
+
+    
+<div class="posting"> 
+    <div class="post-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et auctor .</p> </div>
+<div class="post-actions"> <ul>
+      <li class="like"><a href="#">122</a></li>
+      <li><a href="#">12$</a></li>
+      <li><a href="#">1#</a></li>
+    </ul> </div> </div>
+
+    
+ <div class="posting"> 
+    <div class="post-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et auctor .</p> </div>
+<div class="post-actions"> <ul>
+      <li class="like"><a href="#">122</a></li>
+      <li><a href="#">12$</a></li>
+      <li><a href="#">1#</a></li>
+    </ul> </div> </div>
+</div>   
+    
+    
+    
+
+
+ 
+  
+  
+  <div class="post">
+  <div class="post-header">
+    <img src="user.jpg" alt="User Profile Picture">
+    <div class="post-info">
+      <p class="post-author">John Doe</p>
+      <p class="post-time">5 hours ago</p>
+    </div>
+  </div>
+  <div class="post-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et auctor tellus. Nulla facilisi. Nulla lacinia quam eget eros dictum, at feugiat justo tincidunt. Donec lacinia nibh non lectus luctus, id dignissim tortor venenatis. Vivamus euismod sapien vel sem tristique, quis aliquam mi molestie.
+    
+    
+ <lite-youtube videoid="xLhmoxQks4E"></lite-youtube>
+    
+    
+    </p>
+    
+    
+    <section id="grid">
+            <div class="item"><img src="images.jpg"></div>
+            <div class="item"><img src="https://via.placeholder.com/400x400.png?text=Item+2"></div>
+            <div class="item"><img src="https://via.placeholder.com/400x400.png?text=Item+3"></div>
+            <div class="item"><img src="https://via.placeholder.com/400x400.png?text=Item+4"></div>
+            <div class="item"><img src="https://via.placeholder.com/400x400.png?text=Item+5"></div>
+            <div class="item"><img src="https://via.placeholder.com/400x400.png?text=Item+6"></div>
+         </section>
+    <img src="post-image.jpg" alt="Post Image">
+  </div>
+  <div class="post-actions">
+    <ul>
+      <li class="like"><a href="#">Like</a></li>
+      <li><a href="#">Comment</a></li>
+      <li><a href="#">Share</a></li>
+    </ul>
+  </div>
+</div>
+  
+
+
+  
+  <div class="post">
+  <div class="post-header">
+    <img src="user.jpg" alt="User Profile Picture">
+    <div class="post-info">
+      <p class="post-author">John Doe</p>
+      <p class="post-time">5 hours ago</p>
+    </div>
+  </div>
+  <div class="post-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et auctor tellus. Nulla facilisi. Nulla lacinia quam eget eros dictum, at feugiat justo tincidunt. Donec lacinia nibh non lectus luctus, id dignissim tortor venenatis. Vivamus euismod sapien vel sem tristique, quis aliquam mi molestie.</p>
+    <img src="images.jpg" alt="Post Image">
+  </div>
+  <div class="post-actions">
+    <ul>
+      <li class="like"><a href="#">Like</a></li>
+      <li><a href="#">Comment</a></li>
+      <li><a href="#">Share</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="post">
+  <div class="post-header">
+    <img src="user.jpg" alt="User Profile Picture">
+    <div class="post-info">
+      <p class="post-author">John Doe</p>
+      <p class="post-time">5 hours ago</p>
+    </div>
+  </div>
+  <div class="post-content">
+    <video src="video.mp4"class="picture"controls/> </video>   		
+    <img src="post-image.jpg" alt="Post Image">
+  </div>
+  <div class="post-actions">
+    <ul>
+      <li class="like"><a href="#">Like</a></li>
+      <li><a href="#">Comment</a></li>
+      <li><a href="#">Share</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="post">
+  <div class="post-header">
+    <img src="user.jpg" alt="User Profile Picture">
+    <div class="post-info">
+      <p class="post-author">John Doe</p>
+      <p class="post-time">5 hours ago</p>
+    </div>
+  </div>
+  <div class="post-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et auctor tellus. Nulla facilisi. Nulla lacinia quam eget eros dictum, at feugiat justo tincidunt. Donec lacinia nibh non lectus luctus, id dignissim tortor venenatis. Vivamus euismod sapien vel sem tristique, quis aliquam mi molestie.</p>
+    <img src="post-image.jpg" alt="Post Image">
+  </div>
+  <div class="post-actions">
+    <ul>
+      <li class="like"><a href="#">Like</a></li>
+      <li><a href="#">Comment</a></li>
+      <li><a href="#">Share</a></li>
+    </ul>
+  </div>
+</div>
+        
+        <div class="post">
+  <div class="post-header">
+    <img src="user.jpg" alt="User Profile Picture">
+    <div class="post-info">
+      <p class="post-author">John Doe</p>
+      <p class="post-time">5 hours ago</p>
+    </div>
+  </div>
+  <div class="post-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et auctor tellus. Nulla facilisi. Nulla lacinia quam eget eros dictum, at feugiat justo tincidunt. Donec lacinia nibh non lectus luctus, id dignissim tortor venenatis. Vivamus euismod sapien vel sem tristique, quis aliquam mi molestie.</p>
+    <img src="post-image.jpg" alt="Post Image">
+  </div>
+  <div class="post-actions">
+    <ul>
+      <li class="like"><a href="#">Like</a></li>
+      <li><a href="#">Comment</a></li>
+      <li><a href="#">Share</a></li>
+    </ul>
+  </div>
+</div>
+    	
+        
+        
+    </main>
+
+    <footer>
+        <p>Soobin By Mansitee © 2023. Testing website mobile minimalis.</p>
+    </footer>
+
+    <script src="seo.js"></script>
+</body>
+</html>
