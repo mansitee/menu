@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Gradient Generator V2</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container" id="bg-container">
+	<div class="options" id="gradient-modal">
+		<i class="fas fa-times close"></i>
+		<h1>Gradient Generator</h1>
+		
+		<div class="row">
+			<div class="input-container half-container">
+				<label for="first-color" id="first-color-label">#4152d2</label>
+				<input type="color" value="#4152D2" name="first-color">
+			</div>
+			<div class="input-container half-container">
+				<label for="second-color" id="second-color-label">#f6b8cc</label>
+				<input type="color" value="#f6b8cc" name="second-color">
+			</div>
+		</div>
+		
+		<div class="row input-container">
+			<label class="radio">
+				<span class="radio__input">
+					<input type="radio" name="background" value="linear-gradient" checked>
+					<span class="radio__control"></span>
+				</span>
+				<span class="radio__label">Linear</span>
+			</label>
+			<label class="radio">
+				<span class="radio__input">
+					<input type="radio" name="background" value="radial-gradient">
+					<span class="radio__control"></span>
+				</span>
+				<span class="radio__label">Radial</span>
+			</label>
+		</div>
+		
+		<div class="row input-container double-container" id="angle-container">
+			<div class="line">
+				<label class="button">
+					<span class="button__input">
+						<input type="radio" name="gradient-angle" value="to top" checked>
+						<span class="button__control"><i class="fas fa-arrow-up"></i></span>
+					</span>
+					<span class="button__label">Top</span>
+				</label>
+				<label class="button">
+					<span class="button__input">
+						<input type="radio" name="gradient-angle" value="to top right" checked>
+						<span class="button__control"><i class="fas fa-arrow-up rotate"></i></span>
+					</span>
+					<span class="button__label">Top Right</span>
+				</label>
+				<label class="button">
+					<span class="button__input">
+						<input type="radio" name="gradient-angle" value="to right">
+						<span class="button__control"><i class="fas fa-arrow-right"></i></span>
+					</span>
+					<span class="button__label">Right</span>
+				</label>
+				<label class="button">
+					<span class="button__input">
+						<input type="radio" name="gradient-angle" value="to bottom right" checked>
+						<span class="button__control"><i class="fas fa-arrow-right rotate"></i></span>
+					</span>
+					<span class="button__label ">Bottom Right</span>
+				</label>
+			</div>
+
+			<div class="line">
+				<label class="button">
+					<span class="button__input">
+						<input type="radio" name="gradient-angle" value="to bottom">
+						<span class="button__control"><i class="fas fa-arrow-down"></i></span>
+					</span>
+					<span class="button__label">Bottom</span>
+				</label>
+				<label class="button">
+					<span class="button__input">
+						<input type="radio" name="gradient-angle" value="to bottom left" checked>
+						<span class="button__control"><i class="fas fa-arrow-down rotate"></i></span>
+					</span>
+					<span class="button__label">Bottom Left</span>
+				</label>
+				<label class="button">
+					<span class="button__input">
+						<input type="radio" name="gradient-angle" value="to left">
+						<span class="button__control"><i class="fas fa-arrow-left"></i></span>
+					</span>
+					<span class="button__label">Left</span>
+				</label>
+				<label class="button">
+					<span class="button__input">
+						<input type="radio" name="gradient-angle" value="to top left" checked>
+						<span class="button__control"><i class="fas fa-arrow-left rotate"></i></span>
+					</span>
+					<span class="button__label">Top Left</span>
+				</label>
+			</div>
+		</div>
+		<p class="show-code" id="showCode">Show Me Some Code</p>
+	</div>
+	<div class="options hide" id="code-modal">
+		<i class="fas fa-times close"></i>
+		<h1>CSS Code</h1>
+		<div class="code-container input-container">
+			<p id="code"></p>
+		</div>
+		<p class="show-code" id="copyToClipboard">Copy to Clipboard</p>
+	</div>
+	<button class="hide show-controls" id="showControls">Show Gradient Controls</button>
+</div>
+
+<!-- To Dos 
+[ ] Clean up all the class/ id / variable names to consistent formatting - BEM for CSS, camelCase for JS
+[ ] Mobile friendly
+ 
+
+UI State #1: 
+- Show Gradient Modal
+- Hide Code Modal
+- Hide Gradient Button
+- X button goes to UI state #2
+- Show me some code goes to UI state #3
+
+UI State #2:
+- Hide Gradient Modal
+- Hide Code Modal
+- Show Gradient Button
+- Gradient Button goes to UI State #1
+
+UI State #3:
+- Hide Gradient Modal
+- Show Code Modal
+- Show Gradient Button
+- X Button goes to UI state #2
+- Gradient button goes to UI state #1
+-->
+<!-- partial -->
+  <script src='https://kit.fontawesome.com/7e70566245.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
