@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Password Generator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class = "password-generator">
+            <div class = "info">
+                <h2>Passowrd Generator</h2>
+
+                <ul>
+                    <li>At least 1 lower case letter: <span>[a-z]</span></li>
+
+                    <li>At least 1 upper case letter: <span>[A-Z]</span></li>
+
+                    <li>At least 1 number: <span>[0-9]</span></li>
+
+                    <li>At least 1 special character: <span>[~, !, #, ...]</span></li>
+                    
+                    <li>Password Length: <span>12 characters</span></li>
+                </ul>
+            </div>
+
+            <button type = "button" id = "display-btn">Generate Password</button>
+
+            <div id = "display-box">
+                <h3>Your Password</h3>
+            </div>
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>

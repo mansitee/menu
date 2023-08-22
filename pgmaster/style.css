@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to top, rgb(65, 82, 210), rgb(246, 184, 204));
+}
+
+.password-generator{
+    flex: 0 0 90%;
+    background: rgba(255, 255, 255, .7);
+    padding:10px;
+    border-radius: 10px;
+    tbox-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.info h2{
+    text-align: center;
+    color: #000;
+    text-decoration: underline;
+}
+
+.info ul{
+    padding: 10px 0 10px 20px;
+}
+
+.info ul li{
+    line-height: 1.5;
+}
+
+.info span{
+    color: #00a676;
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 10px 15px;
+    background: linear-gradient(#7fc8f8, #5aa9e6);
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background: linear-gradient(#7fc8f8, #067bc2);
+}
+
+#display-box{
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+@media(min-width: 768px){
+    .password-generator{
+        flex: 0 0 50%;
+    }
+}
